@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/CitasU"
+        android:title="Citas"
+        android:icon="@drawable/citas"
+        />
+    <item
+        android:id="@+id/Chat"
+        android:title="Chatbot"
+        android:icon="@drawable/chatbot"/>
+    <item
+        android:id="@+id/PerfilU"
+        android:title="Mi Perfil"
+        android:icon="@drawable/perfil"/>
+    <item
+        android:id="@+id/Contactanos"
+        android:title="Contactanos"
+        android:icon="@drawable/contactanos"/>
+
+</menu>

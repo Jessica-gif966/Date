@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/CitasC"
+        android:title="Citas"
+        android:icon="@drawable/citas"
+        />
+
+    <item
+        android:id="@+id/ConsultoriosC"
+        android:title="Consultorios"
+        android:icon="@drawable/consultorios"
+        />
+
+    <item
+        android:id="@+id/PerfilC"
+        android:title="Mi Perfil"
+        android:icon="@drawable/perfil"/>
+</menu>

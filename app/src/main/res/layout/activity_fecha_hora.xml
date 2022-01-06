@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FechaHora">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="279dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/logocompleto"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="31dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="69dp"
+            android:gravity="center"
+            android:text="Fecha"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="240dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/eFecha"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:gravity="center|bottom"
+                android:inputType="textPersonName"
+                android:text="dd/mm/aaaa"
+                tools:layout_editor_absoluteX="100dp"
+                tools:layout_editor_absoluteY="248dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/etiSeleccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hora: "
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/SpinnerHoras"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnAgendar"
+            android:layout_width="130dp"
+            android:layout_height="53dp"
+            android:gravity="center"
+            android:text="Agendar"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="372dp" />
+    </LinearLayout>
+
+</LinearLayout>

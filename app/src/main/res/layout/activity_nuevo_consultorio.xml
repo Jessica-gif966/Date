@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NuevoConsultorio">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa la direccion del consultorio "
+        android:textColor="@color/purple_700"
+        android:textSize="20dp"></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dirección"></EditText>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A continuacion ingresa el horario inicial y final de cada cita disponible"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Primer Cita"
+                android:textColor="@color/purple_700"
+                android:textSize="15dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hora11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Inicio" />
+
+
+                <EditText
+                    android:id="@+id/hora11E"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:text="00:00"
+                    android:inputType="textPersonName"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hora12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Final" />
+
+
+                <EditText
+                    android:id="@+id/hora12E"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:text="00:00"
+                    android:inputType="textPersonName"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Segunda Cita"
+                android:textColor="@color/purple_700"
+                android:textSize="15dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hora21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Inicio" />
+
+
+                <EditText
+                    android:id="@+id/hora21E"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:text="00:00"
+                    android:inputType="textPersonName"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hora22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Final" />
+
+
+                <EditText
+                    android:id="@+id/hora22E"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:text="00:00"
+                    android:inputType="textPersonName"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnguardarfechas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"></Button>
+
+
+</LinearLayout>

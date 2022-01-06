@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    tools:context=".RegistrarConsultorio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/logocompleto" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/registrarconsultorio" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:orientation="horizontal"
+                    android:shape="rectangle"
+                    android:textColorHint="#1B4F72"
+                    app:boxCornerRadiusBottomEnd="20sp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/etNombreConsultorio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#D4E6F1"
+                        android:ems="10"
+                        android:hint="Nombre"
+                        android:inputType="text"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:orientation="horizontal"
+                    android:shape="rectangle"
+                    android:textColorHint="#1B4F72"
+                    app:boxCornerRadiusBottomEnd="20sp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/etPaternoConsultorio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#D4E6F1"
+                        android:ems="10"
+                        android:hint="Apellido Paterno"
+                        android:inputType="text"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:orientation="horizontal"
+                    android:shape="rectangle"
+                    android:textColorHint="#1B4F72"
+                    app:boxCornerRadiusBottomEnd="20sp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/etMaternoConsultorio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#D4E6F1"
+                        android:ems="10"
+                        android:hint="Apellido Materno"
+                        android:inputType="text"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:orientation="horizontal"
+                    android:shape="rectangle"
+                    android:textColorHint="#1B4F72"
+                    app:boxCornerRadiusBottomEnd="20sp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/etTelefonoConsultorio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#D4E6F1"
+                        android:ems="10"
+                        android:hint="Telefono"
+                        android:inputType="number"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:orientation="horizontal"
+                    android:shape="rectangle"
+                    android:textColorHint="#1B4F72"
+                    app:boxCornerRadiusBottomEnd="20sp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="30"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/etCorreoConsultorio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#D4E6F1"
+                        android:ems="10"
+                        android:hint="Correo"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:orientation="horizontal"
+                    android:shape="rectangle"
+                    android:textColorHint="#1B4F72"
+                    app:boxCornerRadiusBottomEnd="20sp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/etContraseña1Consultorio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#D4E6F1"
+                        android:ems="10"
+                        android:hint="Contraseña"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:orientation="horizontal"
+                    android:shape="rectangle"
+                    android:textColorHint="#1B4F72"
+                    app:boxCornerRadiusBottomEnd="20sp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/etContraseña2Consultorio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#D4E6F1"
+                        android:ems="10"
+                        android:hint="Verifica tu contraseña"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:orientation="horizontal"
+                    android:shape="rectangle"
+                    android:textColorHint="#1B4F72"
+                    app:boxCornerRadiusBottomEnd="20sp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/etCodigoSeguirdad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#D4E6F1"
+                        android:ems="10"
+                        android:hint="Código de seguridad"
+                        android:inputType="numberPassword"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:color="#661A1A"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnRegistrarConsultorio"
+                    android:layout_width="200dp"
+                    android:layout_height="50sp"
+                    android:color="#661A1A"
+                    android:gravity="center"
+                    android:text="Registrar" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

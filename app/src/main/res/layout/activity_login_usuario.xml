@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginUsuario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@drawable/logocompleto"
+            android:onClick="LoginConsultorio"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/loginusuario"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/apartado_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageUsuario"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20sp"
+            app:srcCompat="@mipmap/usuario" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:shape="rectangle"
+            android:textColorHint="#1B4F72"
+            app:boxCornerRadiusBottomEnd="20sp"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:errorEnabled="true">
+
+
+            <EditText
+                android:id="@+id/etCorreoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D4E6F1"
+                android:ems="10"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/apartado_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imagePassword"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20sp"
+            app:srcCompat="@mipmap/password" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:textColorHint="#1B4F72"
+            app:counterEnabled="true"
+            app:counterMaxLength="16"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/etContraseñaUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D4E6F1"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/apartado_Ingresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:color="#661A1A"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnIngresarUsuario"
+            android:layout_width="200dp"
+            android:layout_height="50sp"
+            android:color="#661A1A"
+            android:gravity="center"
+            android:text="Ingresar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/apartado_Registrarse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:gravity="center"
+            android:onClick="RegistroUsuario"
+            android:text="Registrarse"
+            android:textColor="@color/purple_700"
+            android:textSize="18dp"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+</LinearLayout>
